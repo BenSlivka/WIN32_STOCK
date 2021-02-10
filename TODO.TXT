@@ -1,0 +1,35 @@
+From:	Bens
+Subj:	To-Do list for Windows Stock charting program
+Date:	25-Jul-1990 Initial version.
+	10-Feb-1992 Add list of features from PM version, QB version
+
+ 1) Save (EXT)DEVMODE printer properties in win.ini, especially page
+    orientation.
+
+ 3) Plot Horizontal/Vertical grids, label axes, legends, etc.
+
+ 5) Add more stuff to Statistics dialog:
+    o	Last hi/lo/close
+
+ 7) Disable File.Print... if no file loaded, or if no printer
+
+ 9) Mouse select to show hi-lo-close, volume, and date
+
+10) If too many points for resolution of device, coalesce sets of
+    points together (min(low), max(high), average(close)?).
+
+11) Zoom in/out feature (marquee-select area to zoom in on
+
+12) Add status bar, to show progress when reading file or drawing
+    o	Similar to Excel
+
+DONE
+------------------------------------
+10-Feb-1992 Support Zero vs. Min-price origin plotting:
+	    o	Menu check/uncheck is main work.
+10-Feb-1992 Change window title to include data name/title
+10-Feb-1992 Show splits with vertical line
+12-Feb-1992 Draw stats on graph, in addition to statistics dialog.
+
+
+--- the end ---

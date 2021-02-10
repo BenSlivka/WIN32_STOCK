@@ -1,0 +1,168 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "ids.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+STOCK                   ICON    DISCARDABLE     "stock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+STOCK MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...",                   IDM_FILE_PRINT
+        MENUITEM "P&rinter Setup...",           IDM_FILE_PRINTER_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Copy",                        IDM_EDIT_COPY
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Origin at Zero",              IDM_OPTIONS_ORIGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Statistics...",              IDM_OPTIONS_STATS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+DLGINCLUDE RCDATA DISCARDABLE 
+BEGIN
+    "IDS.H\0"
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG DISCARDABLE  68, 40, 168, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Stock"
+FONT 8, "System"
+BEGIN
+    LTEXT           "Stock Viewer Version 0.50",-1,32,8,90,8
+    ICON            "Stock",-1,9,8,18,20
+    LTEXT           "Chart stock data.",-1,8,28,102,8
+    LTEXT           "(c) 1992-1994, Benjamin W. Slivka",-1,8,36,151,8
+    DEFPUSHBUTTON   "OK",IDS_APP_TITLE,130,6,32,14,WS_GROUP
+    LTEXT           "May 26, 1994",-1,32,16,62,8
+END
+
+IDD_STATS DIALOG DISCARDABLE  76, 60, 200, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Stock Statistics"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Title:",501,2,6,22,8
+    LTEXT           "File:",502,2,16,22,8
+    LTEXT           "Company X Stock Data",IDC_TITLE,24,6,162,8
+    LTEXT           "Days:",504,2,36,22,8
+    LTEXT           "foo.dat",IDC_FILE,24,15,162,8
+    LTEXT           "1200",IDC_DAYS,24,36,24,8
+    LTEXT           "24 Apr 60",IDC_DATE_FIRST,24,26,38,8
+    LTEXT           "10 Apr 82",IDC_DATE_LAST,84,26,38,8
+    LTEXT           "From:",509,2,26,22,8
+    LTEXT           "To:",510,68,26,16,8
+    LTEXT           "Splits:",511,54,36,22,8
+    LTEXT           "123",IDC_SPLITS,78,36,16,8
+    LTEXT           "Factor:",513,104,36,26,8
+    LTEXT           "999.999",IDC_SPLIT_FACTOR,132,36,31,8
+    PUSHBUTTON      "OK",IDS_APP_TITLE,83,69,34,14
+    LTEXT           "Lowest Close:",515,2,46,50,8
+    LTEXT           "000.001",IDC_LOW_CLOSE,50,46,28,8
+    LTEXT           "Highest Close:",517,92,46,52,8
+    LTEXT           "999.999",IDC_HIGH_CLOSE,142,46,28,8
+    LTEXT           "Lowest Price:",519,2,56,48,8
+    LTEXT           "000.001",IDC_LOW_OVERALL,50,56,28,8
+    LTEXT           "Highest Price:",-1,92,56,50,8
+    LTEXT           "999.999",IDC_HIGH_OVERALL,142,56,28,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""ids.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Stock Viewer"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
